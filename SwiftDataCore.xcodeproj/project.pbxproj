@@ -53,9 +53,9 @@
 		EFCADE262C8F568300C1F888 /* SwiftDataCore */ = {
 			isa = PBXGroup;
 			children = (
+				EFCADE382C8F56EB00C1F888 /* Model */,
+				EFCADE372C8F56DC00C1F888 /* View */,
 				EFCADE272C8F568300C1F888 /* SwiftDataCoreApp.swift */,
-				EFCADE292C8F568300C1F888 /* ContentView.swift */,
-				EFCADE2B2C8F568300C1F888 /* Item.swift */,
 				EFCADE2D2C8F568400C1F888 /* Assets.xcassets */,
 				EFCADE2F2C8F568400C1F888 /* Preview Content */,
 			);
@@ -68,6 +68,22 @@
 				EFCADE302C8F568400C1F888 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFCADE372C8F56DC00C1F888 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFCADE292C8F568300C1F888 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFCADE382C8F56EB00C1F888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFCADE2B2C8F568300C1F888 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
