@@ -12,6 +12,10 @@
 		EFCADE2C2C8F568300C1F888 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE2B2C8F568300C1F888 /* Item.swift */; };
 		EFCADE2E2C8F568400C1F888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCADE2D2C8F568400C1F888 /* Assets.xcassets */; };
 		EFCADE312C8F568400C1F888 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCADE302C8F568400C1F888 /* Preview Assets.xcassets */; };
+		EFCADE3A2C8FE7D200C1F888 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE392C8FE7D200C1F888 /* Trip.swift */; };
+		EFCADE3C2C8FE85E00C1F888 /* Accomodation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE3B2C8FE85E00C1F888 /* Accomodation.swift */; };
+		EFCADE3E2C8FEACA00C1F888 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE3D2C8FEACA00C1F888 /* Animal.swift */; };
+		EFCADE412C8FEE8200C1F888 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE402C8FEE8200C1F888 /* AnimalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		EFCADE2B2C8F568300C1F888 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EFCADE2D2C8F568400C1F888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFCADE302C8F568400C1F888 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFCADE392C8FE7D200C1F888 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		EFCADE3B2C8FE85E00C1F888 /* Accomodation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accomodation.swift; sourceTree = "<group>"; };
+		EFCADE3D2C8FEACA00C1F888 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		EFCADE402C8FEE8200C1F888 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 		EFCADE372C8F56DC00C1F888 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EFCADE3F2C8FEE6800C1F888 /* AnimalViews */,
 				EFCADE292C8F568300C1F888 /* ContentView.swift */,
 			);
 			path = View;
@@ -82,8 +91,19 @@
 			isa = PBXGroup;
 			children = (
 				EFCADE2B2C8F568300C1F888 /* Item.swift */,
+				EFCADE392C8FE7D200C1F888 /* Trip.swift */,
+				EFCADE3B2C8FE85E00C1F888 /* Accomodation.swift */,
+				EFCADE3D2C8FEACA00C1F888 /* Animal.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EFCADE3F2C8FEE6800C1F888 /* AnimalViews */ = {
+			isa = PBXGroup;
+			children = (
+				EFCADE402C8FEE8200C1F888 /* AnimalView.swift */,
+			);
+			path = AnimalViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCADE3C2C8FE85E00C1F888 /* Accomodation.swift in Sources */,
+				EFCADE3A2C8FE7D200C1F888 /* Trip.swift in Sources */,
 				EFCADE2A2C8F568300C1F888 /* ContentView.swift in Sources */,
 				EFCADE2C2C8F568300C1F888 /* Item.swift in Sources */,
+				EFCADE412C8FEE8200C1F888 /* AnimalView.swift in Sources */,
 				EFCADE282C8F568300C1F888 /* SwiftDataCoreApp.swift in Sources */,
+				EFCADE3E2C8FEACA00C1F888 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
