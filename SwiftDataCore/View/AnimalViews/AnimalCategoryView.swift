@@ -8,42 +8,59 @@
 import SwiftUI
 import SwiftData
 
-struct AnimalView: View {
+struct AnimalCategoryView: View {
     
     @Environment(\.modelContext) private var modelContext
     @Query var animalCategories: [AnimalCategory]
     
   
-    @State private var showSheet: Bool = false
+    @State private var showAddCategorySheet: Bool = false
     
     var body: some View {
         NavigationStack {
             List {
                 ForEach(animalCategories) { animalCategory in
                     NavigationLink(animalCategory.name) {
-                        Text("Sub")
-                        // Add logic for adding animals
-                        // to categories
+                        AnimalListView(animalCategory: animalCategory)
                     }
                 }
                 .onDelete(perform: deleteCategory)
             }
             .navigationTitle("Categories")
             .toolbar{
-                ToolbarItem(placement: .topBarLeading) {
-                    EditButton()
-                }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {
-                        showSheet.toggle()
-                    }){
-                       Label("Add Item", systemImage: "plus")
+                if !animalCategories.isEmpty {
+                    ToolbarItem(placement: .topBarLeading) {
+                        EditButton()
+                    }
+                
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(action: {
+                            showAddCategorySheet.toggle()
+                        }){
+                            Label("Add Item", systemImage: "plus")
+                        }
                     }
                 }
             }
-            .sheet(isPresented: $showSheet, content: {
+            .sheet(isPresented: $showAddCategorySheet, content: {
                 AnimalCategorySheetView()
             })
+            .overlay {
+                if animalCategories.isEmpty {
+                    ContentUnavailableView(label: {
+                        Label("Ops! No Categories", systemImage: "list.bullet.rectangle.portrait")
+                    }, description: {
+                        Text("You can add animal categories here")
+                    }, actions: {
+                        Button(action: {
+                            showAddCategorySheet = true
+                        }) {
+                            Text("Add Category")
+                        }
+                    })
+                    .offset(y: -60)
+                }
+            }
             
             
         }
@@ -69,12 +86,8 @@ struct AnimalCategorySheetView: View {
     var body: some View {
         
         VStack(spacing: 20) {
-            TextField("Animal Category", text: $animalCategoryName)
-                .padding(.horizontal, 10)
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                .frame(height: 50)
-                .background(Color.gray.opacity(0.2))
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+           TextFieldView(textFieldTitle: "Animal Category",
+                         textBinding: $animalCategoryName)
              
             Button(action: saveCategory, label: {
                 Text("Save")
@@ -100,6 +113,6 @@ struct AnimalCategorySheetView: View {
 }
 
 #Preview {
-    AnimalView()
+    AnimalCategoryView()
         .modelContainer(for: [AnimalCategory.self])
 }

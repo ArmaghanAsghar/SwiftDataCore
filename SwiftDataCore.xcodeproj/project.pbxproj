@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFB723B12C9120F8004C5FC3 /* AnimalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB723B02C9120F8004C5FC3 /* AnimalListView.swift */; };
+		EFB723B32C912E34004C5FC3 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB723B22C912E34004C5FC3 /* TextFieldView.swift */; };
+		EFB723B72C9136C2004C5FC3 /* AddAnimalSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB723B62C9136C2004C5FC3 /* AddAnimalSheetView.swift */; };
 		EFCADE282C8F568300C1F888 /* SwiftDataCoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE272C8F568300C1F888 /* SwiftDataCoreApp.swift */; };
 		EFCADE2A2C8F568300C1F888 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE292C8F568300C1F888 /* ContentView.swift */; };
 		EFCADE2C2C8F568300C1F888 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE2B2C8F568300C1F888 /* Item.swift */; };
@@ -15,10 +18,13 @@
 		EFCADE3A2C8FE7D200C1F888 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE392C8FE7D200C1F888 /* Trip.swift */; };
 		EFCADE3C2C8FE85E00C1F888 /* Accomodation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE3B2C8FE85E00C1F888 /* Accomodation.swift */; };
 		EFCADE3E2C8FEACA00C1F888 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE3D2C8FEACA00C1F888 /* Animal.swift */; };
-		EFCADE412C8FEE8200C1F888 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE402C8FEE8200C1F888 /* AnimalView.swift */; };
+		EFCADE412C8FEE8200C1F888 /* AnimalCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCADE402C8FEE8200C1F888 /* AnimalCategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EFB723B02C9120F8004C5FC3 /* AnimalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListView.swift; sourceTree = "<group>"; };
+		EFB723B22C912E34004C5FC3 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		EFB723B62C9136C2004C5FC3 /* AddAnimalSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimalSheetView.swift; sourceTree = "<group>"; };
 		EFCADE242C8F568300C1F888 /* SwiftDataCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCADE272C8F568300C1F888 /* SwiftDataCoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataCoreApp.swift; sourceTree = "<group>"; };
 		EFCADE292C8F568300C1F888 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,7 +34,7 @@
 		EFCADE392C8FE7D200C1F888 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		EFCADE3B2C8FE85E00C1F888 /* Accomodation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accomodation.swift; sourceTree = "<group>"; };
 		EFCADE3D2C8FEACA00C1F888 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
-		EFCADE402C8FEE8200C1F888 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
+		EFCADE402C8FEE8200C1F888 /* AnimalCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 		EFCADE3F2C8FEE6800C1F888 /* AnimalViews */ = {
 			isa = PBXGroup;
 			children = (
-				EFCADE402C8FEE8200C1F888 /* AnimalView.swift */,
+				EFCADE402C8FEE8200C1F888 /* AnimalCategoryView.swift */,
+				EFB723B02C9120F8004C5FC3 /* AnimalListView.swift */,
+				EFB723B22C912E34004C5FC3 /* TextFieldView.swift */,
+				EFB723B62C9136C2004C5FC3 /* AddAnimalSheetView.swift */,
 			);
 			path = AnimalViews;
 			sourceTree = "<group>";
@@ -180,9 +189,12 @@
 				EFCADE3A2C8FE7D200C1F888 /* Trip.swift in Sources */,
 				EFCADE2A2C8F568300C1F888 /* ContentView.swift in Sources */,
 				EFCADE2C2C8F568300C1F888 /* Item.swift in Sources */,
-				EFCADE412C8FEE8200C1F888 /* AnimalView.swift in Sources */,
+				EFB723B12C9120F8004C5FC3 /* AnimalListView.swift in Sources */,
+				EFCADE412C8FEE8200C1F888 /* AnimalCategoryView.swift in Sources */,
 				EFCADE282C8F568300C1F888 /* SwiftDataCoreApp.swift in Sources */,
 				EFCADE3E2C8FEACA00C1F888 /* Animal.swift in Sources */,
+				EFB723B72C9136C2004C5FC3 /* AddAnimalSheetView.swift in Sources */,
+				EFB723B32C912E34004C5FC3 /* TextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

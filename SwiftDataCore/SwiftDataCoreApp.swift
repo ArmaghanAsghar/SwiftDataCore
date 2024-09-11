@@ -36,7 +36,7 @@ import SwiftData
 struct SwiftDataCoreApp: App {
     var body: some Scene {
         WindowGroup {
-            AnimalView()
+            AnimalCategoryView()
         }
         .modelContainer(for: [AnimalCategory.self])
     }

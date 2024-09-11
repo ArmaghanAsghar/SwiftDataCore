@@ -15,7 +15,7 @@ final class AnimalCategory {
     
     // The category may contain none or many
     // .cascade relationship means delete all instances of animal when category is deleted.
-    // .inverse forms the relationship between the two models.
+    // .inverse form a relationship between the two models.
     @Relationship(deleteRule: .cascade, inverse: \Animal.category) var animals = [Animal]()
     
     init(name: String, animals: [Animal] = [Animal]()) {
@@ -40,7 +40,7 @@ final class Animal {
 
 
 extension Animal {
-    enum Diet: String, Codable {
+    enum Diet: String, Codable, CaseIterable {
         case herbivorous = "Herbivore"
         case carnivorous = "Carnivore"
         case omnivorous = "Omnivore"
